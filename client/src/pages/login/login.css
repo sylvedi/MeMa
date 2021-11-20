@@ -1,0 +1,68 @@
+.login {
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+  
+}
+
+.loginTitle {
+  font-size: 50px;
+  color: #02040f;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.loginForm {
+  width: 25%;
+  height: 40%;
+  margin-top: 20px;
+  padding: 30PX;
+  display: flex;
+  flex-direction: column;
+  background-color: #02040f;
+  justify-content: center;
+}
+label{
+  color: rgb(243, 243, 243);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.loginForm > label {
+  margin: 10px 0;
+}
+
+.loginInput {
+  padding: 10px;
+  background-color: #fdfffc;
+  border: none;
+ 
+}
+
+.loginButton {
+  margin-top: 50px;
+  cursor: pointer;
+  background-color: #3f37c9;
+  border: none;
+  color: white;
+  border-radius: 1px;
+  padding: 10px;
+  
+}
+
+.loginButton:disabled{
+  cursor: not-allowed;
+  background-color: #3f37c9;
+}
+
+.loginRegisterButton {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: #3f37c9;
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  color: white;
+  border-radius: 1px;
+}
