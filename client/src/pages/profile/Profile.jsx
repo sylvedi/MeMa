@@ -2,6 +2,7 @@ import "./profile.css";
 
 import { useContext, useState } from "react";
 import { Context } from "../../context/Context";
+import { Link } from "react-router-dom";
 import axios from "axios";
 
 
@@ -40,12 +41,10 @@ export default function Profile() {
 
            <div className="profileContainer">
 
-                <div className="profile">
+              <div className="profile">
                 <div className="profileWrapper">
 
-                    <div className="profileTitle">
-                    <span className="profileUpdateTitle">USER ACCOUNT</span>
-                    </div>
+                   
 
                     <div className="profilePP">
                         <img
@@ -57,17 +56,19 @@ export default function Profile() {
 
                             <div className="userInfo">
                                 
-                                <h5>{user.username}</h5>            
+                                <h5>{user.username}</h5>     
+                                <h4>{user.email}</h4>       
                             </div>
+
                             
-                            <label>{user.email}</label>
                                                 
-                    <button className="settingsSubmit" type="submit">Edit User</button>
- 
+                    <Link className="profileSubmit" to="/settings" type="submit">Edit User</Link>
+
+          
                 </div>
             
             </div>
           
-           </div>
+          </div>
   );
 }

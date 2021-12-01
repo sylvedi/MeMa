@@ -1,7 +1,36 @@
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 300px;
+  height: 400px;
+  margin-top: 40px;
+  margin-left: 20px;
+ border: 1px #e6e6e6;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.055);
+}
+
+.profileWrapper {
+  display: flex;
+  align-items: center;
+ 
+  flex-direction: column;
+  width: 300px;
+  height: 400px;
+
+ 
+}
+
 .profilePP {
     display: flex;
     align-items: center;
-    margin: 10px 0;
+    margin-top: 30px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+ 
   }
   
   .profilePP > img {
@@ -15,7 +44,7 @@
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background-color: lightcoral;
+   
     color: white;
     display: flex;
     align-items: center;
@@ -25,10 +54,41 @@
   }
 
   .userInfo {
-    font-size: 25px;
-    font-family: "Josefin Sans", sans-serif;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-top: 20px;
+   
+  }
+  .userInfo > h5 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
   }
 
-  .profile {
-    flex: 1;
+  .userInfo > h4 {
+    font-size: 15px;
+    margin-bottom: 90px;
+  }
+
+  .profileSubmit {
+    color: white;
+    background-color: #3f37c9;
+    padding: 10px;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    font-size: 13px;
+    text-decoration: none;
+  }
+  .profileSubmit:hover {
+    color: white;
+    background-color: #2820b6;
+    padding: 10px;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    font-size: 13px;
+    text-decoration: none;
   }

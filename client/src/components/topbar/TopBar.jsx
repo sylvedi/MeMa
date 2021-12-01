@@ -45,11 +45,7 @@ export default function TopBar() {
               CREATE
             </Link>
           </li>
-          <li className="topListItem">
-            <Link className="link" to="/profile">
-              profile
-            </Link>
-          </li>
+        
           <li className="topListItem" onClick={handleLogout}>
             {user && "LOGOUT"}
           </li>
@@ -57,7 +53,7 @@ export default function TopBar() {
       </div>
       <div className="topRight">
         {user ? (
-          <Link to="/settings">
+          <Link to="/profile">
             <img className="topImg" src={PF+user.profilePic} alt="" />
           </Link>
         ) : (
