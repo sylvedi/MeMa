@@ -1,5 +1,6 @@
 import Home from "./pages/home/Home";
 import TopBar from "./components/topbar/TopBar";
+import Footer from "./components/footer/Footer";
 import Single from "./pages/single/Single";
 import Write from "./pages/write/Write";
 import Settings from "./pages/settings/Settings";
@@ -11,7 +12,6 @@ import { Context } from "./context/Context";
 import Beauty from "./pages/beauty/Beauty";
 import Fashion from "./pages/fashion/Fashion";
 import News from "./pages/news/News";
-import Beautys from "./pages/beautys/Beautys"
 import Profile from "./pages/profile/Profile";
 
 
@@ -30,7 +30,6 @@ function App() {
         <Route path="/news">{user ? <News /> : <News />}</Route>
         <Route path="/beauty">{user ? <Beauty /> : <Beauty />}</Route>
         <Route path="/fashion">{user ? <Fashion /> : <Fashion />}</Route>
-        <Route path="/beautys">{user ? <Beautys /> : <Beautys />}</Route>
         <Route path="/register">{user ? <Home /> : <Register />}</Route>
         <Route path="/login">{user ? <Home /> : <Login />}</Route>
         <Route path="/write">{user ? <Write /> : <Register />}</Route>
@@ -42,7 +41,7 @@ function App() {
         </Route>
         
       </Switch>
- 
+    <Footer />
     </Router>
   );
 }

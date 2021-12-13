@@ -22,9 +22,14 @@
   flex: 6;
 }
 
+.lo{
+  font-size: 40px;
+margin: 10px 0 0 10px;
+font-family: Georgia, serif;
+}
 .topIcon {
   font-size: 20px;
-  margin-right: 10px;
+  margin-right: 5px;
   color: #001219;
   cursor: pointer;
   
@@ -51,6 +56,7 @@
   font-size: 12px;
   font-weight: 500;
   cursor: pointer;
+
 }
 
 .topSearchIcon {
@@ -58,4 +64,11 @@
   color: #001219;
   cursor: pointer;
   margin-left: 15px;
+}
+
+.topListItem:hover
+{
+  letter-spacing: 4px;
+  transition: ease-in-out 0.3s;
+font-weight: bold;
 }

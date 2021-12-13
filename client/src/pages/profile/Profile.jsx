@@ -1,20 +1,34 @@
+import axios from "axios";
+import { useContext, useState, useEffect } from "react";
+import { Context } from "../../context/Context";
+import { useLocation } from "react-router";
+import { Link } from "react-router-dom";
 import "./profile.css";
 
-import { useContext, useState } from "react";
-import { Context } from "../../context/Context";
-import { Link } from "react-router-dom";
-import axios from "axios";
 
 
 export default function Profile() {
-  const [file, setFile] = useState(null);
-  const [username, setUsername] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const location = useLocation();
+  const path = location.pathname.split("/")[2];
+  const [post, setPost] = useState({});
+  const [file] = useState(null);
+  const [username] = useState("");
+  const [email] = useState("");
+  const [password] = useState("");
+  
   
 
   const { user, dispatch } = useContext(Context);
   const PF = "http://localhost:5000/images/"
+
+  useEffect(() => {
+    const getPost = async () => {
+      const res = await axios.get("/posts/" + path);
+      setPost(res.data);
+    
+    };
+    getPost();
+  }, [path]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -66,9 +80,12 @@ export default function Profile() {
 
           
                 </div>
-            
+               
             </div>
+            
+           
           
           </div>
+          
   );
 }

@@ -12,11 +12,13 @@ export default function TopBar() {
   };
   return (
     <div className="top">
+       <span className="lo">MeMa</span>
       <div className="topLeft">
+     
         <i className="topIcon fab fa-facebook-f"></i>
         <i className="topIcon fab fa-twitter"></i>
         <i className="topIcon fab fa-pinterest-p"></i>
-        <i className="topIcon fab fa-instagram"></i>
+        <a href="https://www.instagram.com/sylv.m.edi"><i className="topIcon fab fa-instagram"></i></a>
       </div>
       <div className="topCenter">
         <ul className="topList">

@@ -4,6 +4,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: url("../assets//img//bb.jpg") center no-repeat fixed;
+  background-size: cover;
 
 }
 
@@ -48,10 +50,8 @@ label{
 }
 
 .registerLoginButton {
-  position: absolute;
-  top: 60px;
-  right: 20px;
-  background-color: #3f37c9;
+  width: 440px;
+  background-color: #02040f;
   cursor: pointer;
   border: none;
   padding: 10px;

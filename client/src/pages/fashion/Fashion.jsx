@@ -18,14 +18,14 @@ export default function Fashion() {
    <div className="title">
    <span className="topstories">Fashion</span>
    </div>
-<div className="container">
+<div className="fcontainer">
   
 {result.map((image) => (
  <>
- <div className="card">
-    <div className="post">
+ <div className="fcard">
+    <div className="fpost">
     <img src={image.urls.small} className="img" alt="beauty" />
-     <p> <i className="topIcons fab fa-instagram"></i>{image.user.instagram_username}</p>
+     <p> <i className="topIcons fab fa-instagram"></i><a className="aa" href={`https://www.instagram.com/${image.user.instagram_username}`}>{image.user.instagram_username}</a></p>
      <div className="user"><p className="username">Photp by {image.user.name}</p></div>
       <p className="des">{image.description}</p>
     </div>
